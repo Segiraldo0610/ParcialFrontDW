@@ -1,0 +1,9 @@
+<section>
+  <h2>Registrar bodega</h2>
+  <form [formGroup]="form" (ngSubmit)="guardar()">
+    <label>Nombre<input formControlName="nombre" required maxlength="255"></label>
+    <label>Ubicación<input formControlName="ubicacion" required maxlength="255"></label>
+    <button type="submit" [disabled]="guardando()">Registrar bodega</button>
+  </form>
+  <p aria-live="polite">{{ mensaje() }}</p>
+</section>

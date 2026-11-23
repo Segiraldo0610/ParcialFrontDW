@@ -1,0 +1,15 @@
+<section>
+  <h2>Productos por bodega</h2>
+  <div class="tabla"><table aria-label="Productos por bodega">
+    <thead><tr><th>Producto</th><th>Precio</th><th>Cantidad</th><th>Bodega</th></tr></thead>
+    <tbody>
+      @for (bodega of bodegas(); track bodega.id) {
+        @for (producto of bodega.productos; track producto.id) {
+          <tr><td>{{ producto.nombre }}</td><td>{{ precio.format(producto.precio) }}</td>
+            <td>{{ producto.cantidad }}</td><td>{{ bodega.nombre }}</td></tr>
+        }
+      }
+    </tbody>
+  </table></div>
+  <p role="status">{{ aviso() }}</p>
+</section>
