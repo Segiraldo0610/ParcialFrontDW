@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "projects": {
+    "bodegas": {
+      "projectType": "application", "root": "", "sourceRoot": "src",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "outputPath": "dist/bodegas", "browser": "src/main.ts", "index": "src/index.html",
+            "tsConfig": "tsconfig.json", "styles": ["src/styles.css"]
+          }
+        },
+        "serve": { "builder": "@angular/build:dev-server", "options": { "buildTarget": "bodegas:build" } }
+      }
+    }
+  },
+  "cli": { "analytics": false }
+}
