@@ -1,10 +1,10 @@
 # Bodegas-frontend
 
-Este repositorio contiene una Interfaz Angular para registrar bodegas y consultar el inventario. La tabla toma el nombre de la bodega de cada grupo de productos recibido desde la API.
+Este repositorio contiene una interfaz Angular para registrar bodegas y consultar el inventario. La tabla toma el nombre de la bodega de cada grupo de productos recibido desde la API.
 
 ## Ejecutar
 
-Requiere Node.js 24.21 y npm. Se inicia primero la [API de bodegas](https://github.com/Segiraldo0610/ParcialBackDW) en el puerto 8080. En otra terminal:
+Si usas Node.js 24, instala la versión 24.15.0 o posterior de esa serie. El proyecto se probó con Node.js 24.21.0 y npm 11.19.0. Inicia primero la [API de bodegas](https://github.com/Segiraldo0610/ParcialBackDW) en el puerto 8080. En otra terminal:
 
 ```powershell
 git clone https://github.com/Segiraldo0610/ParcialFrontDW.git
@@ -13,7 +13,7 @@ npm ci
 npm start
 ```
 
-Luego Abre <http://localhost:4200> y mantén ambas terminales abiertas. Para compilar la interfaz usa `npm run build`.
+Abre <http://localhost:4200> y mantén ambas terminales abiertas. Si Angular ofrece otro puerto porque el 4200 está ocupado, libera el 4200 y vuelve a ejecutar `npm start`. La API permite las peticiones del navegador desde `http://localhost:4200`. Para compilar la interfaz usa `npm run build`.
 
 ## Comprobar el flujo
 
